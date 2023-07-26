@@ -1,0 +1,279 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+
+body{
+width: 100%;
+}
+
+main{
+background-image: url("../desafio/assets/resort-2.jpg");
+background-position: fixed;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 100vh;
+width: 100vw; 
+background-size: cover;
+
+flex-wrap: wrap;
+}
+
+
+.cabecalho{
+background-color:#f4f4f4 ;
+display: flex;
+justify-content: space-between;
+}
+
+.componentes-header{
+display: flex;
+gap: 55px;
+padding: 25px;
+}
+@media screen and (max-width:768px){
+.componentes-header{
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+}
+li{
+list-style: none;
+}
+
+.navbar{
+background-color: blue !important;
+}
+strong{
+color: #fff;
+font-size: 25px;
+}
+
+a{
+text-decoration: none !important;
+}
+
+.cabecalho img{
+max-width:200px;
+max-height:150px;
+width: auto;
+height: auto;
+padding: 15px;
+}
+
+
+.cards{
+display: flex;
+gap: 25px;
+justify-content: center;
+align-items: center;
+margin-top: 55px;
+}
+
+.cards img{
+max-width:200px;
+max-height:150px;
+width: auto;
+height: auto;
+}
+
+.cards a{
+text-decoration: none !important;
+border: 2px solid rgb(80, 80, 126);
+background-color: blue;
+color:white !important;
+box-shadow: rgba(0,0,0,0.1);
+}
+
+.contatos{
+background-color: rgba(0,0,0,0.6);
+opacity: 1;
+padding: 20px;
+margin-top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 9vw;
+margin-top: 25px;
+}
+.contatos h3{
+color: #fff;
+}
+
+.contatos img{
+max-width:200px;
+max-height:150px;
+width: auto;
+height: auto;
+padding: 15px;
+margin-left: 45px;
+border-radius: 5px;
+/* background-color: #fff; */
+}
+
+.whatss{
+background-color: #fff; 
+}
+
+.email{
+background-color: #fff; 
+}
+
+.insta{
+background-color: #fff; 
+}
+.items-footer{
+display:flex ;
+
+}
+.fim-footer{
+background-color: rgba(0,0,0,0.6);
+}
+.fim-footer p{
+color: #f4f4f4;
+}
+
+/* página destino */
+/* .slide{
+background-color: rgb(93, 93, 145) !important; */
+
+.principal-slide{
+background-color: rgb(93, 93, 145) !important;
+}
+.carousel-item p,h5{
+margin-left: 779px;
+}
+.destino{
+width: 100%;
+}
+
+.carousel{
+position: relative!important;
+height: calc(100vh - (2*2rem))!important;
+overflow: hidden;
+}
+
+.carousel a{
+color: #fff;
+text-decoration: none;
+font-size:1em;
+padding:.5em 1em;
+transition: all ease-in-out.3s;
+text-align: center;
+border-radius: 5px;
+left:calc((100%/2)-(.5em));
+margin-top: -36px;
+margin-left: 756px;
+}
+
+
+.needs-validation{
+padding: 35px;
+}
+
+
+.cadastro-link{
+display: inline-block;
+background:#F8BABA ;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+text-transform: uppercase;
+font-weight: bold;
+margin-right: auto;
+transition:all linear.3s;
+cursor: pointer;
+position: absolute;
+top:-40px;
+right: 0;
+z-index: 999;
+left: 12px;
+}
+
+
+@media screen and (max-width:768px) {
+.carousel p,h5,a{
+    margin-left: 0;
+}
+}
+
+
+
+.img-promo{
+    display: flex;
+}
+
+.conteudo-promo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.img-promo img{
+max-width:200px;
+max-height:150px;
+width: auto;
+height: auto;
+object-fit: cover;
+border:0;
+vertical-align: middle;
+border-radius: 6px;
+padding: 1rem;
+box-shadow: rgba(0, 0, 0,.1) -2px
+}
+
+.principal-promo{
+width: 100%;
+}
+.conteudo-promo p{
+font-size:1em!important ;
+
+padding: .5rem  1rem;
+border-top-right-radius: 6px;
+box-sizing: content-box;
+    
+}
+.conteudo-promo a{
+background:#4CAF50;color:#fff;text-decoration:none;margin:0;
+
+padding:.7rem 3rem;
+border-bottom-left-radius: 6px;
+box-sizing: content-box;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1px;
+transition: all ease-in-out 0.3s;
+cursor: pointer;
+outline: none;
+position: relative;
+}
+.promocao{
+    
+height:auto;
+padding: 1rem;
+margin-bottom: 1rem;
+border-radius: 6px;
+box-shadow:rgba(0, 0, 0,.1);
+position:relative;
+overflow:hidden;
+transition:all ease.3s;
+cursor:pointer;
+
+}
+
+.promocao p{
+font-family:'Open Sans', sans-serif;
+color:#626264;
+margin-bottom: 1rem;
+text-align:center;
+    
+    
+}
+
+
+   
