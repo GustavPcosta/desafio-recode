@@ -1,0 +1,43 @@
+section{padding:5% 0}
+.alizarin{background:#e74c3c}
+.amethyst{background:#9b59b6}
+.emerald{background:#2ecc71}
+.midnight-blue{background:#2c3e50}
+.peter-river{background:#3498db}
+
+.dl{background:#f0f0f0;padding:30px 0;border-radius:20px;position:relative}
+
+
+.dl:before{content:" ";height:20px;width:20px;background:#ddd;border-radius:20px;position:absolute;left:50%;top:20px;margin-left:-10px}
+
+
+.dl .brand{text-transform:uppercase;letter-spacing:3px;padding:10px 15px;margin-top:10px;text-align:center;min-height:100px}
+
+.dl .discount{min-height:50px;position:relative;font-size:80px;line-height:80px;text-align:center;font-weight:700;padding:20px 15px 0;color:#f1c40f}
+
+.dl .discount:after{content:" ";border-right:20px solid transparent;border-left:20px solid transparent;position:absolute;bottom:-20px;left:20%}
+
+.descr strong{
+    color: #262222;
+}
+
+.dl .discount.alizarin:after{border-top:20px solid #e74c3c}
+.dl .discount.peter-river:after{border-top:20px solid #3498db}
+.dl .discount.emerald:after{border-top:20px solid #2ecc71}
+.dl .discount.amethyst:after{border-top:20px solid #9b59b6}
+.dl .discount .type{font-size:20px;letter-spacing:1px;text-transform:uppercase;margin-top:-30px}
+.dl .descr{color:#262222;margin-top:10px;padding:20px 15px}
+.dl .ends{padding:0 15px;color:#f1c40f;margin-bottom:10px}
+.dl .coupon{min-height:50px;text-align:center;text-transform:uppercase;font-weight:700;font-size:18px;padding:20px 15px}
+.dl .coupon a.open-code{color:#16a085}
+.dl .coupon .code{letter-spacing:1px;border-radius:4px;margin-top:10px;padding:10px 15px;color:#f1c40f;background:#f0f0f0}
+
+.back-color{
+    background-image: radial-gradient(circle at 100% 0%, #66c496 0, #59c59f 5%, #4ac5a8 10%, #3ac6b2 15%, #27c6bc 20%, #0ac6c5 25%, #00c5cf 30%, #00c5d7 35%, #00c4df 40%, #00c2e7 45%, #0cc1ed 50%, #2cbff2 55%, #43bdf7 60%, #57bbfa 65%, #69b8fc 70%, #7ab5fc 75%, #8ab2fc 80%, #9aaffa 85%, #a8abf7 90%, #b6a8f3 95%, #c2a4ed 100%);
+}
+
+
+
+.back-color h1{
+text-align: center;
+}

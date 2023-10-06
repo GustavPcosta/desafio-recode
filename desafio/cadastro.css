@@ -1,0 +1,17 @@
+body{
+    align-items: center;
+    background-image: radial-gradient(circle at 100% 0%, #66c496 0, #59c59f 5%, #4ac5a8 10%, #3ac6b2 15%, #27c6bc 20%, #0ac6c5 25%, #00c5cf 30%, #00c5d7 35%, #00c4df 40%, #00c2e7 45%, #0cc1ed 50%, #2cbff2 55%, #43bdf7 60%, #57bbfa 65%, #69b8fc 70%, #7ab5fc 75%, #8ab2fc 80%, #9aaffa 85%, #a8abf7 90%, #b6a8f3 95%, #c2a4ed 100%);
+}
+
+.btn-button-cadastrp{
+    display: flex;
+    margin-left: 12px;
+}
+
+.segundo-btn{
+    margin-left: 8px;
+}
+
+.segundo-btn a{
+    color: #fff;
+}
