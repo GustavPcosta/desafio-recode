@@ -16,11 +16,11 @@
       </nav> -->
 
 
-      <form class="row g-3 needs-validation" novalidate>
+      <form id="registerForm" class="row g-3 needs-validation" novalidate>
         <h1>Faça o cadastro da sua viagem</h1>
         <div class="col-md-4 position-relative">
-          <label for="validationTooltip01" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="validationTooltip01" value="" required>
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" value="" required>
           <div class="valid-tooltip">
             
           </div>
@@ -33,25 +33,25 @@
           </div>
         </div>
         <div class="col-md-4 position-relative">
-          <label for="validationTooltipUsername" class="form-label">Email</label>
+          <label for="email" class="form-label">Email</label>
           <div class="input-group has-validation">
             <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-            <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+            <input type="text" class="form-control" id="email" aria-describedby="validationTooltipUsernamePrepend" required>
             <div class="invalid-tooltip">
               
             </div>
           </div>
         </div>
         <div class="col-md-6 position-relative">
-          <label for="validationTooltip03" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="validationTooltip03" required>
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="cidade" required>
           <div class="invalid-tooltip">
             
           </div>
         </div>
         <div class="col-md-3 position-relative">
-          <label for="validationTooltip04" class="form-label">Estado</label>
-          <select class="form-select" id="validationTooltip04" required>
+          <label for="estado" class="form-label">Estado</label>
+          <select class="form-select" id="estado" required>
             <option selected disabled value="">Escolha...</option>
             <option value="">Selecione</option>
     <option value="AC">Acre</option>
@@ -88,15 +88,15 @@
           </div>
         </div>
         <div class="col-md-3 position-relative">
-          <label for="validationTooltip05" class="form-label">Cep</label>
-          <input type="text" class="form-control" id="validationTooltip05" required>
+          <label for="cep" class="form-label">Cep</label>
+          <input type="text" class="form-control" id="cep" required>
           <div class="invalid-tooltip">
            
           </div>
         </div>
         <div class="col-md-3 position-relative">
-            <label for="validationTooltip04" class="form-label">Forma de pagamento</label>
-            <select class="form-select" id="validationTooltip04" required>
+            <label for="formaPagamento" class="form-label">Forma de pagamento</label>
+            <select class="form-select" id="formaPagamento" required>
               <option selected disabled value="">Escolha...</option>
               <option value="">Selecione</option>
               <option value="">Cartão da lorem</option>
@@ -128,6 +128,41 @@
        
       </form>
       
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="registro.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
+
+
+
+
+
+  <script>
+    document.getElementById('registroForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const nome = document.getElementById('nome').value;
+        const sobrenome = document.getElementById('sobrenome').value;
+        const email = document.getElementById('email').value;
+        const cidade = document.getElementById('cidade').value;
+        const estado = document.getElementById('estado').value;
+        const formaPagamento = document.getElementById('formaPagamento').value;
+    
+        axios.post('http://localhost:8080/api/usuario/cadastrar', {
+            nome: nome,
+            email: email,
+            senha: senha,
+            
+        })
+        .then(function(response) {
+            alert(response.data);
+        })
+        .catch(function(error) {
+            console.error(error);
+        });
+    });
+    
+    
+    
+    </script>
 </html>
